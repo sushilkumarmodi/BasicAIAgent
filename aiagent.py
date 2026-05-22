@@ -7,7 +7,7 @@ import re
 st.set_page_config(page_title="AI Chat Agent", layout="centered")
 
 # Configure Gemini
-genai.configure(api_key="AIzaSyBTld0EfXAWISi5ohXr1JmXgQzn_nRxjfA")
+genai.configure(api_key="apikey")
 model = genai.GenerativeModel("gemini-2.5-flash")
 
 # ---------------- TOOLS ---------------- #
