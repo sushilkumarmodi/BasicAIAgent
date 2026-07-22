@@ -2,10 +2,12 @@ import streamlit as st # type: ignore
 import google.generativeai as genai # type: ignore
 import requests
 import re
+import os
 
 
 # Configure API
-genai.configure(api_key="YOUR_API_KEY")
+secret = os.environ["gemini_api_key"]
+genai.configure(api_key=secret)
 model = genai.GenerativeModel("gemini-1.5-pro")
 
 st.set_page_config(page_title="AI Chat Agent", layout="centered")
